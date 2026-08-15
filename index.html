@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Redirect</title>
+<meta charset="UTF-8">
+<title>Open EKB + EA</title>
 </head>
+
 <body>
 
+<button id="open">اضغط للفتح</button>
+
 <script>
-window.open("ea.com", "_blank");
-window.open("ekb.eg", "_blank");
+document.getElementById("open").onclick = function () {
+
+    let ekb = document.createElement("a");
+    ekb.href = "https://ekb.eg";
+    ekb.target = "_blank";
+    ekb.click();
+
+    let ea = document.createElement("a");
+    ea.href = "https://ea.com";
+    ea.target = "_blank";
+    ea.click();
+
+};
 </script>
 
 </body>
