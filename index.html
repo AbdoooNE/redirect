@@ -2,26 +2,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Open EKB + EA</title>
+<title>Open</title>
 </head>
-
 <body>
 
-<button id="open">اضغط للفتح</button>
-
 <script>
-document.getElementById("open").onclick = function () {
-
-    let ekb = document.createElement("a");
-    ekb.href = "https://ekb.eg";
-    ekb.target = "_blank";
-    ekb.click();
-
-    let ea = document.createElement("a");
-    ea.href = "https://ea.com";
-    ea.target = "_blank";
-    ea.click();
-
+window.onload = function () {
+    window.open("https://ekb.eg", "_blank");
+    setTimeout(function () {
+        window.open("https://ea.com", "_blank");
+    }, 300);
 };
 </script>
 
